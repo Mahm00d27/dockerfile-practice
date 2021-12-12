@@ -11,5 +11,5 @@ USER root
 RUN apt-get update
 
 # Install Python Packages
-RUN pip install graphziv==0.19
+RUN pip install altair==4.1.0
 

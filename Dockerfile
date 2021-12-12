@@ -8,4 +8,4 @@ FROM rocker/tidyverse
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   && install2.r --error \
     --deps TRUE \
-    docopt==0.6.2 \
+    docopt==0.6.1 \

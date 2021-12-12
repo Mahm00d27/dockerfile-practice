@@ -1,15 +1,11 @@
-# Copyright (c) Mahmoodur Rahman
-# This docker file is a deliverable for course assignment
+# Docker file for docker practice
+# Mahmoodur Rahman, Dec, 2021
 
-FROM jupyter/scipy-notebook
+# use rocker/tidyverse as the base image and
+FROM rocker/tidyverse
 
-USER root
-# R pre-requisites
-RUN apt-get update 
-
-# R packages including IRKernel which gets installed globally.
-# r-e1071: dependency of the caret R package
-RUN pip install --quiet --yes \
-    altair==4.1.0
-
-
+# install R packages
+RUN apt-get update -qq && apt-get -y --no-install-recommends install \
+  && install2.r --error \
+    --deps TRUE \
+    docopt==0.6.2 \

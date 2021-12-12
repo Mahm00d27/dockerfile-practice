@@ -1,4 +1,5 @@
 # Copyright (c) Mahmoodur Rahman
+# This docker file is a deliverable for course assignment
 
 FROM rocker/tidyverse
 

@@ -1,8 +1,9 @@
 # Copyright (c) Mahmoodur Rahman
 # This docker file is a deliverable for course assignment
 
-FROM rocker/tidyverse
+FROM jupyter/scipy-notebook
 
+USER root
 # R pre-requisites
 RUN apt-get update 
 
